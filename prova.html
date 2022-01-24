@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>média</title>
 </head>
 <body>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
     var nota_suzana = (10+8+7+10)/4;
     var nota_amanda = (8+9+10+6)/4;
     var nota_débora = (6+10+3+7)/4;
+  
 
     document.write("Suzana sua média foi " + nota_suzana);
     document.write("<br>");
@@ -20,7 +21,9 @@
     document.write("<br>");
     document.write("Débora sua média foi " + nota_débora);
     document.write("<br>");
-    document.write("Turma sua média foi " + (nota_suzana+nota_amanda+nota_débora)/3);
+    var media = (nota_amanda+nota_débora+nota_suzana)/3;
+    document.write ("<br>");
+    document.write("Turma sua média foi " + Math.round(media));
 </script>
 
 </body>
