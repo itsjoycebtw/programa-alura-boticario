@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>média</title>
+    <title>Var</title>
 </head>
 <body>
     <meta charset="UTF-8">
@@ -24,6 +24,42 @@
     var media = (nota_amanda+nota_débora+nota_suzana)/3;
     document.write ("<br>");
     document.write("Turma sua média foi " + Math.round(media));
+ 
+
+pulaLinha();
+function pulaLinha() {
+       document.write("<br>");
+}
+
+function mostra(frase) {
+
+     document.write(frase);
+pulaLinha();
+}
+
+//var numero1 = prompt("Digite o primeiro número");
+//var numero2 = prompt("Digite o segundo número");
+
+//mostra("O valor de " + numero2 + " vezes " + numero2 + " é: " + (numero1 * numero2));
+pulaLinha();
+
+function a (texto){
+    return "(" + texto + ")";
+}
+
+function b (texto){
+    return "@" + texto + "@";
+
+}
+
+function c (nome,sobrenome){
+    return a (nome + " " + b (sobrenome));
+
+}
+
+ var resultado = c ("Raisson" , "Leal");
+     
+      mostra (resultado);
 </script>
 
 </body>

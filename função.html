@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+<script>
+
+    
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+        pulaLinha();
+    function geraCodigo(letra, numero1, numero2) {
+
+    return "GH1022";
+    }
+    
+        mostra ("O código é " + geraCodigo ("A",10,20));
+        pulaLinha();
+    
+    function funcaoQualquer() {
+
+        var n1 = 10;
+        var n2 = 20;
+        var n3 = 30;
+
+        return n2;
+
+}
+    var retorno =funcaoQualquer();
+        mostra(retorno);
+        pulaLinha();
+        
+    function calculaIMC(peso,altura) {
+        var imc = peso / (altura * altura);
+        return (imc);
+
+    }  
+    var imcCalculado = calculaIMC (85,1.70);
+        mostra ("O meu IMC é: " + imcCalculado);
+
+        pulaLinha();
+
+    function calculaImc (altura,peso) {
+        var imc = peso / (altura * altura);
+        return (imc);
+
+    }
+    var imcCalculado = calculaIMC (70,1.75);
+        mostra ("O IMC é :" + imcCalculado);
+        pulaLinha();
+
+    function calculaIMC (altura,peso) {
+        return peso / (altura * altura);
+        
+    }      
+    mostra ("O meu IMC é "+ calculaIMC (1))
+    pulaLinha();
+
+  
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostra(resultado);
+</script>
+
+</script>
+</body>
+</html>

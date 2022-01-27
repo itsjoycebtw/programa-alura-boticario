@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Copa</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha() {
+
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        /*var limite = parseInt (prompt ("Entre com a data limite: "));
+        var anoCopa = 1930;
+        
+        while (anoCopa <= limite) {
+            alert (" Teve copa em " + anoCopa);
+            anoCopa = anoCopa + 4;
+        }
+
+        alert (FIM);
+        */
+
+        /*var amandita = 2;
+        var limite
+
+        while ( amandita <= 100 ){
+            mostra ( "O número agora é " + amandita);
+            amandita = amandita + 2;
+
+        }
+        alert (FIM);
+        */
+
+        /*var contador = 30;
+
+
+        while (contador <= 40) {
+            if (contador != 33 && contador != 37) {
+                mostra(contador);
+            }
+
+            contador = contador + 1;
+
+        }
+
+        mostra ("FIM");  
+        */
+
+       /* var contador = 20;
+
+       while (contador >= 0){
+           mostra (contador);
+           contador = contador - 1;
+       }
+
+       mostra ("FIM");
+
+       */
+
+        var loginCadastrado = "alura";
+        var senhaCadastrada = "alura321";
+        var tentativas = 3;
+        while (tentativas > 0){
+            var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+
+        if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+            tentativas = -1;
+
+            alert("Bem-vindo ao sistema " + loginInformado);
+        } else {
+
+            alert("Login inválido. Tente novamente");
+        }
+            tentativas = tentativas - 1;
+        }
+       
+    </script>
+</body>
+
+</html>
