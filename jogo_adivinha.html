@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Adivinha</title>
+</head>
+<body>
+    <h1>Jogo de Adivinhação</h1>
+    <script>
+        function pulaLinha(){
+            
+            document.write ("<br>");  
+        }
+
+        function mostra (frase){
+            
+            document.write (frase);
+            pulaLinha();
+        }
+        function sorteia (numero){
+            return Math.round(Math.random() * numero);
+        }
+        var n = parseInt (prompt ("Até qual número você quer que eu sorteie? " ));
+        var numeroPensado = sorteia (n);
+        var chute = parseInt(prompt( "Digite seu chute!"));
+        if(chute == numeroPensado){
+        
+            mostra ("Você acertou!");
+        } 
+        else {
+            if (chute < numeroPensado){
+                mostra ("Você errou, o seu chute é menor que o número pensado, o número pensado é " + numeroPensado);  
+            } 
+            if ( chute > numeroPensado){
+                mostra ("Você errou, o seu chute é menor que o número pensado, o número pensado é " + numeroPensado);  
+            }
+        }
+            
+           
+        
+
+        
+    </script>
+</body>
+</html>

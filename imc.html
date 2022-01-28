@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de IMC</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <input type="number" name="peso" id="peso">
+    <input type="number" name="altura" id="altura">
+
+    <script>
+        function pulaLinha (){
+            document.write ("<br>");
+            document.write ("<br>");
+        }               
+         function mostra (frase){
+             document.write (frase);
+             pulaLinha();
+         }       
+
+        function calculaIMC (altura,peso) {
+             return peso / (altura * altura);
+             
+         }
+
+        function engorda (n1,n2){
+             return n1+n2;
+
+         }
+        function multiplica (n1,n2){
+            return n1*n2;
+         }
+        function emagrece(n1,n2){
+             return n1-n2;
+         }
+         var numero1 = 1;
+         var numero2 = 2;
+         var pesoRaisson = 115;
+         var alturaRaisson = 1.75;
+            pulaLinha();
+            mostra ("O IMC do Raisson atualmente é " + calculaIMC (alturaRaisson,pesoRaisson));
+            pesoRaisson = engorda (pesoRaisson,10);
+            mostra ("O raisson engordou 10kg, seu IMC é " + calculaIMC (alturaRaisson,pesoRaisson));
+            pesoRaisson = emagrece (pesoRaisson,50);
+            mostra ("O raisson emagreceu 50kg, seu IMC é " + calculaIMC (alturaRaisson,pesoRaisson));
+            pesoRaisson = engorda(pesoRaisson,pesoRaisson);
+            mostra ("O raisson dobrou o peso, seu IMC é " + calculaIMC (alturaRaisson,pesoRaisson));
+
+            pulaLinha();
+
+        
+    </script>
+</body>
+</html>
